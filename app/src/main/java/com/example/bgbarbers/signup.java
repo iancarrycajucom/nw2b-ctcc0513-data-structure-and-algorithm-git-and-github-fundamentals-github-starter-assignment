@@ -31,7 +31,7 @@ public class signup extends AppCompatActivity {
         backButton = findViewById(R.id.backButton);
 
         // --- Set listener for the CUSTOMER "Sign Up" button ---
-        customerSignupButton.setOnClickListener(new View.OnClickListener() {
+        customerSignupButton.setOnClickListener(new  View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // You can get the text from the EditText fields here if needed

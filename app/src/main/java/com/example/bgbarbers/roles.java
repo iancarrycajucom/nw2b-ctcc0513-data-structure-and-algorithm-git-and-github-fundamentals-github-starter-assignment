@@ -1,7 +1,6 @@
 package com.example.bgbarbers;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
 import android.widget.Button;

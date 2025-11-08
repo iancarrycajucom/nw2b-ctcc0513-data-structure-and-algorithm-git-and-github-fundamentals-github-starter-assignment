@@ -15,7 +15,7 @@ public class homepage extends AppCompatActivity {
         setContentView(R.layout.activity_homepage);
 
         // --- Initialize All Views ---
-        TextView userText = findViewById(R.id.textView4);
+        TextView textView4 = findViewById(R.id.textView4);
         bottomNav = findViewById(R.id.bottomNav);
 
 
@@ -56,13 +56,4 @@ public class homepage extends AppCompatActivity {
             return false;
         });
     }
-
-    // This method is no longer needed because we now call finish() when switching activities,
-    // which makes this behavior more reliable and standard.
-    // @Override
-    // protected void onResume() {
-    //     super.onResume();
-    //     // Keep the Home icon selected when the user returns to this page
-    //     bottomNav.setSelectedItemId(R.id.nav_home);
-    // }
 }
