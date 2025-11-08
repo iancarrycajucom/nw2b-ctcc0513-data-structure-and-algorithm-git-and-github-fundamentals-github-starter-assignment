@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup">
+
+    <!-- ✨ NEW: Background Image (same as login screen) ✨ -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.85"
+        android:contentDescription="Background image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_image1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Title "Create Account" -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Create Account"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/usernameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+
+    <!-- ✨ STYLED: Username Field (same as login screen) ✨ -->
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="234dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B0B0B0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <!-- ✨ STYLED: Password Field (same as login screen) ✨ -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="234dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B0B0B0"
+        app:layout_constraintEnd_toEndOf="@+id/usernameEditText"
+        app:layout_constraintStart_toStartOf="@+id/usernameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/usernameEditText" />
+
+    <!-- Button for CUSTOMER sign-up -->
+    <Button
+        android:id="@+id/customerSignupButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#00008B"
+        android:text="Sign Up as Customer"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
+        app:layout_constraintStart_toStartOf="@+id/passwordEditText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+    <!-- Button for BARBER sign-up -->
+    <Button
+        android:id="@+id/barberSignupButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#555555"
+        android:text="Sign Up as Barber"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/customerSignupButton"
+        app:layout_constraintStart_toStartOf="@+id/customerSignupButton"
+        app:layout_constraintTop_toBottomOf="@+id/customerSignupButton" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Back"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/barberSignupButton"
+        app:layout_constraintStart_toStartOf="@+id/barberSignupButton"
+        app:layout_constraintTop_toBottomOf="@+id/barberSignupButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

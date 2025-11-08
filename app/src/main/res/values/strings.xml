@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BGBarbers</string>
+
+    <!-- Add this line -->
+    <string name="user_avatar_description">User profile picture</string>
+
+</resources>
