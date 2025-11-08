@@ -1,7 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-
+<?xml version="1.0" encoding="utf-8"?>
 <data-extraction-rules>
     <cloud-backup>
-
+        <!--
+        To learn more about backup and restore rules, see the official documentation at:
+        https://developer.android.com/guide/topics/data/autobackup#Rules
+        -->
+        <include domain="sharedpref" path="."/>
+        <exclude domain="sharedpref" path="device_id.xml"/>
     </cloud-backup>
+    <!--
+    <device-transfer>
+        <include .../>
+        <exclude .../>
+    </device-transfer>
+    -->
 </data-extraction-rules>
