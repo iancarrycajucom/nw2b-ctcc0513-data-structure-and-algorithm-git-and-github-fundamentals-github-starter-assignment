@@ -40,7 +40,7 @@ public class signup extends AppCompatActivity {
 
                 // Show the success message for customers
                 Toast.makeText(signup.this, "Sign up successful!", Toast.LENGTH_LONG).show();
-                // TODO: Add logic here to save the new customer to your database
+
             }
         });
 
@@ -54,7 +54,7 @@ public class signup extends AppCompatActivity {
 
                 // Show the success message for barbers
                 Toast.makeText(signup.this, "Successfully signed up as a Barber!", Toast.LENGTH_LONG).show();
-                // TODO: Add logic here to save the new barber to your database
+
             }
         });
 

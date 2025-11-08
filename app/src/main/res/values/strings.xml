@@ -3,5 +3,29 @@
 
     <!-- Add this line -->
     <string name="user_avatar_description">User profile picture</string>
+    <string name="background_image">Background image</string>
+    <string name="bg_barbers">BG Barbers</string>
+    <string name="choose_your_role">Choose Your Role</string>
+    <string name="customer">Customer</string>
+    <string name="barber">Barber</string>
+    <string name="background_image1">Background image</string>
+    <string name="username">Username</string>
+    <string name="bg_barbers_name">BG Barbers</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="back">Back</string>
+    <string name="welcome">Welcome!</string>
+    <string name="barber_profile_picture">Barber profile picture</string>
+    <string name="miguel_de_cras">Miguel De Cras</string>
+    <string name="options_menu">Options menu</string>
+    <string name="my_customers">My Customers</string>
+    <string name="log_out">Log out</string>
+    <string name="user_profile_picture">User profile picture</string>
+    <string name="john_do">John do</string>
+    <string name="background_image_of_the_barbershop">Background image of the barbershop</string>
+    <string name="home">Home</string>
+    <string name="appointment">Appointment</string>
+    <string name="set_appointment">Set appointment</string>
+    <string name="profile">Profile</string>
 
 </resources>

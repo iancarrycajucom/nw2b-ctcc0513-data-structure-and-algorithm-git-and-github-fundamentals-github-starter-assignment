@@ -18,7 +18,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <!-- Title "Create Account" -->
     <TextView
@@ -26,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Create Account"
+        android:text="@string/create_account"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -51,7 +52,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintVertical_bias="0.45"
+        tools:ignore="Autofill,HardcodedText" />
 
     <!-- ✨ STYLED: Password Field (same as login screen) ✨ -->
     <EditText
@@ -66,7 +68,8 @@
         android:textColorHint="#B0B0B0"
         app:layout_constraintEnd_toEndOf="@+id/usernameEditText"
         app:layout_constraintStart_toStartOf="@+id/usernameEditText"
-        app:layout_constraintTop_toBottomOf="@+id/usernameEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/usernameEditText"
+        tools:ignore="Autofill,HardcodedText" />
 
     <!-- Button for CUSTOMER sign-up -->
     <Button
@@ -79,7 +82,8 @@
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
         app:layout_constraintStart_toStartOf="@+id/passwordEditText"
-        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
+        tools:ignore="HardcodedText" />
 
     <!-- Button for BARBER sign-up -->
     <Button
@@ -92,7 +96,8 @@
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/customerSignupButton"
         app:layout_constraintStart_toStartOf="@+id/customerSignupButton"
-        app:layout_constraintTop_toBottomOf="@+id/customerSignupButton" />
+        app:layout_constraintTop_toBottomOf="@+id/customerSignupButton"
+        tools:ignore="HardcodedText" />
 
     <!-- Back Button -->
     <Button
@@ -101,7 +106,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="?android:attr/selectableItemBackground"
-        android:text="Back"
+        android:text="@string/back"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/barberSignupButton"
         app:layout_constraintStart_toStartOf="@+id/barberSignupButton"

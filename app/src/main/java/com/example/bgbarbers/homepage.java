@@ -1,6 +1,5 @@
 package com.example.bgbarbers;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,7 +8,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class homepage extends AppCompatActivity {
 
     private BottomNavigationView bottomNav;
-    private TextView userText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +15,7 @@ public class homepage extends AppCompatActivity {
         setContentView(R.layout.activity_homepage);
 
         // --- Initialize All Views ---
-        userText = findViewById(R.id.textView4);
+        TextView userText = findViewById(R.id.textView4);
         bottomNav = findViewById(R.id.bottomNav);
 
 

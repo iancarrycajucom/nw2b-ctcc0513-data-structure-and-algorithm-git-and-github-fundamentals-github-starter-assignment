@@ -28,11 +28,7 @@ public class roles extends AppCompatActivity {
 
         // --- Set Styled Text for the TextView ---
         String text = "Don't have an account?  <b><u>Sign up</u></b>";
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            signupTextView.setText(Html.fromHtml(text, Html.FROM_HTML_MODE_LEGACY));
-        } else {
-            signupTextView.setText(Html.fromHtml(text));
-        }
+        signupTextView.setText(Html.fromHtml(text, Html.FROM_HTML_MODE_LEGACY));
 
         // --- Set listener for the "Sign up" TextView ---
         signupTextView.setOnClickListener(v -> {

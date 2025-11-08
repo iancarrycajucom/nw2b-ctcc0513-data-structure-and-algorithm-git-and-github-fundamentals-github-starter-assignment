@@ -33,10 +33,10 @@
         </activity> <!-- The sign-up activity declaration -->
         <activity
             android:name=".signup"
-            android:exported="true"></activity> <!-- The homepage activity declaration -->
+            android:exported="true" /> <!-- The homepage activity declaration -->
         <activity
             android:name=".homepage"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
